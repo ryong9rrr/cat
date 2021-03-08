@@ -1,4 +1,4 @@
-class MyCounter extends HTMLElement {
+class btnFolder extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
@@ -10,11 +10,11 @@ class MyCounter extends HTMLElement {
 
   render() {
     this.shadow.innerHTML = `
-        <h1>Counter</h1>
-        ${this.count}
-        <button id="btn">add</button>
-        `;
+    <div>
+      <img src="./img/folder.jpg" />
+      <div>노란고양이</div>
+    </div> `;
   }
 }
 
-customElements.define("my-counter", MyCounter);
+customElements.define("btn-folder", btnFolder);
